@@ -19,14 +19,6 @@ variables:
 steps:
 - task: NuGetToolInstaller@1
 
-# this section is needed if u have nuget packahge uncomment click setting change the feedsToUse value  -- remove
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'restore'
-    projects: '**/*.csproj'
-    feedsToUse: 'select'
-    vstsFeed: '2738aa73-6fa1-4ac1-9221-2b44a327d5b8'
-
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
