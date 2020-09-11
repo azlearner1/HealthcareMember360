@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  healthcaremember360.addmember.api:
+    image: ${DOCKER_REGISTRY-}healthcaremember360addmemberapi
+    build:
+      context: .
+      dockerfile: HealthcareMember360.AddMember.API\Dockerfile

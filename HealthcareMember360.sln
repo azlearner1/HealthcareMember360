@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.API", "HealthcareMember360.API\HealthcareMember360.API.csproj", "{764CB27C-E1A0-49F3-BCFE-496971B5F6AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.Core", "HealthcareMember360.Core\HealthcareMember360.Core.csproj", "{93E88DBD-0B64-41A7-A88B-CD62C377A25C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.AddMember.API", "HealthcareMember360.AddMember.API\HealthcareMember360.AddMember.API.csproj", "{98C52E38-0104-4E7F-99D7-875682E6B868}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.SubmitClaim.API", "HealthcareMember360.SubmitClaim.API\HealthcareMember360.SubmitClaim.API.csproj", "{5414CB66-A1E9-4A96-A1BE-0F12D9D828B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.UpdateMember.API", "HealthcareMember360.UpdateMember.API\HealthcareMember360.UpdateMember.API.csproj", "{BA78884A-E66C-4BB8-8C72-126645E4D299}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.MemberDetails.API", "HealthcareMember360.MemberDetails.API\HealthcareMember360.MemberDetails.API.csproj", "{CD0B8408-CCB7-4E6E-AE06-54897FFC745E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.GetClaims.API", "HealthcareMember360.GetClaims.API\HealthcareMember360.GetClaims.API.csproj", "{A7DF6F9E-1396-4672-A0A9-A1979FD9F302}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareMember360.GetMemberPhysician.API", "HealthcareMember360.GetMemberPhysician.API\HealthcareMember360.GetMemberPhysician.API.csproj", "{5BB9EF49-BD2F-4B3D-A117-DAE73A9C9FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareMember360.AddMember.Test", "HealthcareMember360.AddMember.Test\HealthcareMember360.AddMember.Test.csproj", "{F79D21E7-D5C5-4E57-90B4-04B623EF9B4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareMember360.GetClaims.Test", "HealthcareMember360.GetClaims.Test\HealthcareMember360.GetClaims.Test.csproj", "{65DADC57-95AE-4C74-8E5E-9882B5B24319}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{764CB27C-E1A0-49F3-BCFE-496971B5F6AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764CB27C-E1A0-49F3-BCFE-496971B5F6AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764CB27C-E1A0-49F3-BCFE-496971B5F6AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764CB27C-E1A0-49F3-BCFE-496971B5F6AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E88DBD-0B64-41A7-A88B-CD62C377A25C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E88DBD-0B64-41A7-A88B-CD62C377A25C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E88DBD-0B64-41A7-A88B-CD62C377A25C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E88DBD-0B64-41A7-A88B-CD62C377A25C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C52E38-0104-4E7F-99D7-875682E6B868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C52E38-0104-4E7F-99D7-875682E6B868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C52E38-0104-4E7F-99D7-875682E6B868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C52E38-0104-4E7F-99D7-875682E6B868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5414CB66-A1E9-4A96-A1BE-0F12D9D828B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5414CB66-A1E9-4A96-A1BE-0F12D9D828B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5414CB66-A1E9-4A96-A1BE-0F12D9D828B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5414CB66-A1E9-4A96-A1BE-0F12D9D828B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA78884A-E66C-4BB8-8C72-126645E4D299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA78884A-E66C-4BB8-8C72-126645E4D299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA78884A-E66C-4BB8-8C72-126645E4D299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA78884A-E66C-4BB8-8C72-126645E4D299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0B8408-CCB7-4E6E-AE06-54897FFC745E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0B8408-CCB7-4E6E-AE06-54897FFC745E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0B8408-CCB7-4E6E-AE06-54897FFC745E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0B8408-CCB7-4E6E-AE06-54897FFC745E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DF6F9E-1396-4672-A0A9-A1979FD9F302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DF6F9E-1396-4672-A0A9-A1979FD9F302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DF6F9E-1396-4672-A0A9-A1979FD9F302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DF6F9E-1396-4672-A0A9-A1979FD9F302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB9EF49-BD2F-4B3D-A117-DAE73A9C9FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB9EF49-BD2F-4B3D-A117-DAE73A9C9FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB9EF49-BD2F-4B3D-A117-DAE73A9C9FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB9EF49-BD2F-4B3D-A117-DAE73A9C9FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79D21E7-D5C5-4E57-90B4-04B623EF9B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79D21E7-D5C5-4E57-90B4-04B623EF9B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79D21E7-D5C5-4E57-90B4-04B623EF9B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79D21E7-D5C5-4E57-90B4-04B623EF9B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65DADC57-95AE-4C74-8E5E-9882B5B24319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DADC57-95AE-4C74-8E5E-9882B5B24319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DADC57-95AE-4C74-8E5E-9882B5B24319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DADC57-95AE-4C74-8E5E-9882B5B24319}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C792A18B-9A2B-470E-9B25-6FEB93893774}
+	EndGlobalSection
+EndGlobal
