@@ -38,16 +38,16 @@ namespace HealthcareMember360.GetClaims.Test
             return await Task.FromResult<List<ClaimDetails>>(_claimDetails);
         }
 
-        public Task<int> SaveClaims(ClaimsRequest claimsRequest)
+        public Task<BaseResponse> SaveClaims(ClaimsRequest claimsRequest)
         {
             throw new NotImplementedException();
         }
 
-        public Task<int> UpdateClaims(ClaimDetails claimDetail)
+        public Task<BaseResponse> UpdateClaims(ClaimDetails claimDetail)
         {
             throw new NotImplementedException();
         }
-        public Task DeleteClaimsByID(int claimID)
+        public Task<BaseResponse> DeleteClaimsByID(int claimID)
         {
             throw new NotImplementedException();
         }

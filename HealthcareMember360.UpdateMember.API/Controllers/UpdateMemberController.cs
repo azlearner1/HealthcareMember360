@@ -14,6 +14,6 @@ namespace HealthcareMember360.UpdateMember.API.Controllers
             _memberService = memberService;
         }
         [HttpPut]
-        public async Task<int> UpdateMember(Member member) => await _memberService.UpdateMember(member);
+        public async Task<BaseResponse> UpdateMember(Member member) => await _memberService.UpdateMember(member);
     }
 }

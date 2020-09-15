@@ -14,6 +14,6 @@ namespace HealthcareMember360.SubmitClaim.API.Controllers
             _claimsService = claimsService;
         }
         [HttpPost]
-        public async Task<int> SubmitClaim(ClaimsRequest claimsRequest) => await _claimsService.SaveClaims(claimsRequest);
+        public async Task<BaseResponse> SubmitClaim(ClaimsRequest claimsRequest) => await _claimsService.SaveClaims(claimsRequest);
     }
 }

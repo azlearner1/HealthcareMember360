@@ -17,11 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.MemberD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.GetClaims.API", "HealthcareMember360.GetClaims.API\HealthcareMember360.GetClaims.API.csproj", "{A7DF6F9E-1396-4672-A0A9-A1979FD9F302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareMember360.GetMemberPhysician.API", "HealthcareMember360.GetMemberPhysician.API\HealthcareMember360.GetMemberPhysician.API.csproj", "{5BB9EF49-BD2F-4B3D-A117-DAE73A9C9FC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.GetMemberPhysician.API", "HealthcareMember360.GetMemberPhysician.API\HealthcareMember360.GetMemberPhysician.API.csproj", "{5BB9EF49-BD2F-4B3D-A117-DAE73A9C9FC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareMember360.AddMember.Test", "HealthcareMember360.AddMember.Test\HealthcareMember360.AddMember.Test.csproj", "{F79D21E7-D5C5-4E57-90B4-04B623EF9B4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.AddMember.Test", "HealthcareMember360.AddMember.Test\HealthcareMember360.AddMember.Test.csproj", "{F79D21E7-D5C5-4E57-90B4-04B623EF9B4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareMember360.GetClaims.Test", "HealthcareMember360.GetClaims.Test\HealthcareMember360.GetClaims.Test.csproj", "{65DADC57-95AE-4C74-8E5E-9882B5B24319}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.GetClaims.Test", "HealthcareMember360.GetClaims.Test\HealthcareMember360.GetClaims.Test.csproj", "{65DADC57-95AE-4C74-8E5E-9882B5B24319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareMember360.Gatway.API", "HealthcareMember360.Gatway.API\HealthcareMember360.Gatway.API.csproj", "{DB06E24C-6933-460D-BF46-9BBFD90ED2D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{65DADC57-95AE-4C74-8E5E-9882B5B24319}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65DADC57-95AE-4C74-8E5E-9882B5B24319}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65DADC57-95AE-4C74-8E5E-9882B5B24319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB06E24C-6933-460D-BF46-9BBFD90ED2D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB06E24C-6933-460D-BF46-9BBFD90ED2D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB06E24C-6933-460D-BF46-9BBFD90ED2D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB06E24C-6933-460D-BF46-9BBFD90ED2D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

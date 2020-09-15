@@ -50,16 +50,16 @@ namespace HealthcareMember360.AddMember.Test
             return Task.FromResult<List<Member>>(_members);
         }
 
-        public Task<int> SaveMember(MemberRequest memberRequest)
+        public Task<BaseResponse> SaveMember(MemberRequest memberRequest)
         {
-            return Task.FromResult<int>(1);
+            return Task.FromResult<BaseResponse>(new BaseResponse());
         }
 
-        public Task<int> UpdateMember(Member member)
+        public Task<BaseResponse> UpdateMember(Member member)
         {
             throw new NotImplementedException();
         }
-        public Task DeleteMemberByID(int memberID)
+        public Task<BaseResponse> DeleteMemberByID(int memberID)
         {
             throw new NotImplementedException();
         }
