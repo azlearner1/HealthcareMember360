@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -70,7 +71,7 @@ namespace HealthcareMember360.Core
             }
         }
 
-        public async Task<int> SaveClaims(ClaimsRequest claimsRequest)
+        public async Task<BaseResponse> SaveClaims(ClaimsRequest claimsRequest)
         {
             try
             {
@@ -93,16 +94,21 @@ namespace HealthcareMember360.Core
                     _dBContext.Claims.Add(claims);
                     await _dBContext.SaveChangesAsync();
                 }
-                return claims.ClaimID;
+                return new BaseResponse()
+                {
+                    StatusCode = StatusCodes.Status201Created,
+                    StatusDescription = " Claims Details Added Successfully! ",
+                    ID = claims.ClaimID
+                };
             }
             catch (Exception ex)
             {
                 Log.Error("Exception occurred on Save Claims", ex);
-                throw ex;
+                return new BaseResponse { StatusCode = StatusCodes.Status500InternalServerError, StatusDescription = "Internal Server Error" };
             }
         }
 
-        public async Task<int> UpdateClaims(ClaimDetails claimDetail)
+        public async Task<BaseResponse> UpdateClaims(ClaimDetails claimDetail)
         {
             try
             {
@@ -123,6 +129,12 @@ namespace HealthcareMember360.Core
                     };
                     _dBContext.Claims.Add(claims);
                     await _dBContext.SaveChangesAsync();
+                    return new BaseResponse()
+                    {
+                        StatusCode = StatusCodes.Status201Created,
+                        StatusDescription = " Claims Details Added Successfully! ",
+                        ID = claims.ClaimID
+                    };
                 }
                 else
                 {
@@ -137,16 +149,21 @@ namespace HealthcareMember360.Core
                     };
                     _dBContext.Claims.UpdateRange(claim);
                     await _dBContext.SaveChangesAsync();
+                    return new BaseResponse()
+                    {
+                        StatusCode = StatusCodes.Status202Accepted,
+                        StatusDescription = " Claims Details Updated Successfully! ",
+                        ID = claimDetail.ClaimID
+                    };
                 }
-                return claimDetail.ClaimID;
             }
             catch (Exception ex)
             {
                 Log.Error("Exception occurred on Update Claims", ex);
-                throw ex;
+                return new BaseResponse { StatusCode = StatusCodes.Status500InternalServerError, StatusDescription = "Internal Server Error" };
             }
         }
-        public async Task DeleteClaimsByID(int claimID)
+        public async Task<BaseResponse> DeleteClaimsByID(int claimID)
         {
             try
             {
@@ -156,11 +173,17 @@ namespace HealthcareMember360.Core
                     _dBContext.Claims.Remove(claim);
                     await _dBContext.SaveChangesAsync();
                 }
+                return new BaseResponse()
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    StatusDescription = " Claims Details Deleted Successfully! ",
+                    ID = claimID
+                };
             }
             catch (Exception ex)
             {
                 Log.Error("Exception occurred on Delete Claim", ex);
-                throw ex;
+                return new BaseResponse { StatusCode = StatusCodes.Status500InternalServerError, StatusDescription = "Internal Server Error" };
             }
         }
 

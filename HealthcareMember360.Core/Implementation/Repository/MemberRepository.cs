@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -40,7 +41,7 @@ namespace HealthcareMember360.Core
             }
         }
 
-        public async Task<int> SaveMember(MemberRequest memberRequest)
+        public async Task<BaseResponse> SaveMember(MemberRequest memberRequest)
         {
             try
             {
@@ -69,16 +70,21 @@ namespace HealthcareMember360.Core
                     _dBContext.Member.Add(member);
                     await _dBContext.SaveChangesAsync();
                 }
-                return member.MemberID;
+                return new BaseResponse()
+                {
+                    StatusCode = StatusCodes.Status201Created,
+                    StatusDescription = " Member Details Added Successfully! ",
+                    ID = member.MemberID
+                };
             }
             catch (Exception ex)
             {
                 Log.Error("Exception occurred on Save Member", ex);
-                throw ex;
+                return new BaseResponse { StatusCode = StatusCodes.Status500InternalServerError, StatusDescription = "Internal Server Error" };
             }
         }
 
-        public async Task<int> UpdateMember(Member member)
+        public async Task<BaseResponse> UpdateMember(Member member)
         {
             try
             {
@@ -94,21 +100,32 @@ namespace HealthcareMember360.Core
 
                     _dBContext.Member.Add(member);
                     await _dBContext.SaveChangesAsync();
+                    return new BaseResponse()
+                    {
+                        StatusCode = StatusCodes.Status201Created,
+                        StatusDescription = " Member Details Added Successfully! ",
+                        ID = member.MemberID
+                    };
                 }
                 else
                 {
                     _dBContext.Member.UpdateRange(member);
                     await _dBContext.SaveChangesAsync();
+                    return new BaseResponse()
+                    {
+                        StatusCode = StatusCodes.Status202Accepted,
+                        StatusDescription = " Member Details Updated Successfully! ",
+                        ID = member.MemberID
+                    };
                 }
-                return member.MemberID;
             }
             catch (Exception ex)
             {
                 Log.Error("Exception occurred on Update Member", ex);
-                throw ex;
+                return new BaseResponse { StatusCode = StatusCodes.Status500InternalServerError, StatusDescription = "Internal Server Error" };
             }
         }
-        public async Task DeleteMemberByID(int memberID)
+        public async Task<BaseResponse> DeleteMemberByID(int memberID)
         {
             try
             {
@@ -118,11 +135,17 @@ namespace HealthcareMember360.Core
                     _dBContext.Member.Remove(member);
                     await _dBContext.SaveChangesAsync();
                 }
+                return new BaseResponse()
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    StatusDescription = " Member Deleted Successfully! ",
+                    ID = memberID
+                };
             }
             catch (Exception ex)
             {
                 Log.Error("Exception occurred on Delete Member By ID", ex);
-                throw ex;
+                return new BaseResponse { StatusCode = StatusCodes.Status500InternalServerError, StatusDescription = "Internal Server Error" };
             }
         }
 

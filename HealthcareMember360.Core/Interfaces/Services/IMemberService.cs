@@ -7,9 +7,9 @@ namespace HealthcareMember360.Core
     {
         Task<List<Member>> GetMembers();
         Task<Member> GetMemberByID(int memberID);
-        Task<int> SaveMember(MemberRequest memberRequest);
-        Task<int> UpdateMember(Member member);
-        Task DeleteMemberByID(int memberID);
+        Task<BaseResponse> SaveMember(MemberRequest memberRequest);
+        Task<BaseResponse> UpdateMember(Member member);
+        Task<BaseResponse> DeleteMemberByID(int memberID);
         Task<MemberPhysician> GetMemberPhysicianByMemberID(int memberID);
     }
 }

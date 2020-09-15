@@ -22,11 +22,11 @@ namespace HealthcareMember360.API.Controllers
         [Route("[action]/{memberID}")]
         public async Task<List<ClaimDetails>> GetClaimsDetailsByMemberID(int memberID) => await _claimsService.GetClaimsDetailsByMemberID(memberID);
         [HttpPost]
-        public async Task<int> SaveClaims(ClaimsRequest claimsRequest) => await _claimsService.SaveClaims(claimsRequest);
+        public async Task<BaseResponse> SaveClaims(ClaimsRequest claimsRequest) => await _claimsService.SaveClaims(claimsRequest);
         [HttpPut]
-        public async Task<int> UpdateClaims(ClaimDetails claimDetails) => await _claimsService.UpdateClaims(claimDetails);
+        public async Task<BaseResponse> UpdateClaims(ClaimDetails claimDetails) => await _claimsService.UpdateClaims(claimDetails);
         [HttpDelete]
-        public async Task DeleteClaimsByID(int claimID) => await _claimsService.DeleteClaimsByID(claimID);
+        public async Task<BaseResponse> DeleteClaimsByID(int claimID) => await _claimsService.DeleteClaimsByID(claimID);
 
     }
 }

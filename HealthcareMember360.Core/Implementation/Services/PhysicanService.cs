@@ -20,18 +20,18 @@ namespace HealthcareMember360.Core
             return await _physicanRepository.GetPhysicanByID(PhysicianId);
         }
 
-        public async Task<int> SavePhysican(Physican physican)
+        public async Task<BaseResponse> SavePhysican(Physican physican)
         {
             return await _physicanRepository.SavePhysican(physican);
         }
 
-        public async Task<int> UpdatePhysican(Physican physican)
+        public async Task<BaseResponse> UpdatePhysican(Physican physican)
         {
             return await _physicanRepository.UpdatePhysican(physican);
         }
-        public async Task DeletePhysicanByID(int PhysicianId)
+        public async Task<BaseResponse> DeletePhysicanByID(int PhysicianId)
         {
-            await _physicanRepository.DeletePhysicanByID(PhysicianId);
+            return await _physicanRepository.DeletePhysicanByID(PhysicianId);
         }
     }
 }

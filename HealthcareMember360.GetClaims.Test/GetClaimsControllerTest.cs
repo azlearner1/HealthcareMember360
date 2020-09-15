@@ -1,11 +1,9 @@
-﻿using HealthcareMember360.GetClaims.API.Controllers;
-using HealthcareMember360.Core;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using HealthcareMember360.Core;
+using HealthcareMember360.GetClaims.API.Controllers;
 using HealthcareMember360.GetClaims.Test;
 using NUnit.Framework;
-using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
 
 namespace HealthcareMember360.GetClaims
 {
@@ -21,7 +19,8 @@ namespace HealthcareMember360.GetClaims
             _claimsContoller = new GetClaimsController(_claimsService);
 
             _claimDetails = new List<ClaimDetails>();
-            _claimDetails.Add(new ClaimDetails() {
+            _claimDetails.Add(new ClaimDetails()
+            {
                 ClaimID = 1,
                 ClaimAmount = 1000,
                 ClaimDate = DateTime.Now,

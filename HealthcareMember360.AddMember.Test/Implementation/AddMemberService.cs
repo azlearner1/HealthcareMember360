@@ -1,7 +1,6 @@
 ﻿using HealthcareMember360.Core;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace HealthcareMember360.AddMember.Test
@@ -23,7 +22,7 @@ namespace HealthcareMember360.AddMember.Test
                 SSN = "987654321",
                 PhysicianId = 0
             });
-            _members.Add(new Member() 
+            _members.Add(new Member()
             {
                 MemberID = 0,
                 FirstName = "TestFirstName",

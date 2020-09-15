@@ -1,9 +1,7 @@
 ﻿using HealthcareMember360.AddMember.API.Controllers;
 using HealthcareMember360.Core;
 using NUnit.Framework;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace HealthcareMember360.AddMember.Test
 {
@@ -51,7 +49,7 @@ namespace HealthcareMember360.AddMember.Test
                 EmailAddress = "TestFirstName@cts.com",
                 Address = "Chennai",
                 State = "TN",
-                SSN = "785214563",             
+                SSN = "785214563",
             };
             var result = _memberController.AddMember(memberRequest);
         }

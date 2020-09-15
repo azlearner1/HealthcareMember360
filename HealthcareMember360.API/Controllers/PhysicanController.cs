@@ -20,10 +20,10 @@ namespace HealthcareMember360.API.Controllers
         [HttpGet("{physicianId}")]
         public async Task<Physican> GetPhysicanByID(int physicianId) => await _physicanService.GetPhysicanByID(physicianId);
         [HttpPost]
-        public async Task<int> SavePhysican(Physican physican) => await _physicanService.SavePhysican(physican);
+        public async Task<BaseResponse> SavePhysican(Physican physican) => await _physicanService.SavePhysican(physican);
         [HttpPut]
-        public async Task<int> UpdatePhysican(Physican physican) => await _physicanService.UpdatePhysican(physican);
+        public async Task<BaseResponse> UpdatePhysican(Physican physican) => await _physicanService.UpdatePhysican(physican);
         [HttpDelete]
-        public async Task DeletePhysicanByID(int physicianId) => await _physicanService.DeletePhysicanByID(physicianId);
+        public async Task<BaseResponse> DeletePhysicanByID(int physicianId) => await _physicanService.DeletePhysicanByID(physicianId);
     }
 }

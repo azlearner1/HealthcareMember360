@@ -21,18 +21,18 @@ namespace HealthcareMember360.Core
             return await _claimsRepository.GetClaimsByID(claimID);
         }
 
-        public async Task<int> SaveClaims(ClaimsRequest claimsRequest)
+        public async Task<BaseResponse> SaveClaims(ClaimsRequest claimsRequest)
         {
             return await _claimsRepository.SaveClaims(claimsRequest);
         }
 
-        public async Task<int> UpdateClaims(ClaimDetails claimDetail)
+        public async Task<BaseResponse> UpdateClaims(ClaimDetails claimDetail)
         {
             return await _claimsRepository.UpdateClaims(claimDetail);
         }
-        public async Task DeleteClaimsByID(int claimID)
+        public async Task<BaseResponse> DeleteClaimsByID(int claimID)
         {
-            await _claimsRepository.DeleteClaimsByID(claimID);
+            return await _claimsRepository.DeleteClaimsByID(claimID);
         }
         public async Task<List<ClaimDetails>> GetClaimsDetailsByMemberID(int memberID)
         {

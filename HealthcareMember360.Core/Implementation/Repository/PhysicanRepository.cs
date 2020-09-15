@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -41,7 +42,7 @@ namespace HealthcareMember360.Core
             }
         }
 
-        public async Task<int> SavePhysican(Physican physican)
+        public async Task<BaseResponse> SavePhysican(Physican physican)
         {
             try
             {
@@ -56,16 +57,21 @@ namespace HealthcareMember360.Core
                     _dBContext.Physican.UpdateRange(physican);
                     await _dBContext.SaveChangesAsync();
                 }
-                return physican.PhysicianId;
+                return new BaseResponse()
+                {
+                    StatusCode = StatusCodes.Status202Accepted,
+                    StatusDescription = " Physican Details Added Successfully! ",
+                    ID = physican.PhysicianId
+                };
             }
             catch (Exception ex)
             {
                 Log.Error("Exception occurred on Save Physican By ID", ex);
-                throw ex;
+                return new BaseResponse { StatusCode = StatusCodes.Status500InternalServerError, StatusDescription = "Internal Server Error" };
             }
         }
 
-        public async Task<int> UpdatePhysican(Physican physican)
+        public async Task<BaseResponse> UpdatePhysican(Physican physican)
         {
             try
             {
@@ -80,15 +86,21 @@ namespace HealthcareMember360.Core
                     _dBContext.Physican.UpdateRange(physican);
                     await _dBContext.SaveChangesAsync();
                 }
-                return physican.PhysicianId;
+
+                return new BaseResponse()
+                {
+                    StatusCode = StatusCodes.Status202Accepted,
+                    StatusDescription = " Physican Details Updated Successfully! ",
+                    ID = physican.PhysicianId
+                };
             }
             catch (Exception ex)
             {
                 Log.Error("Exception occurred on Update Physican By ID", ex);
-                throw ex;
+                return new BaseResponse { StatusCode = StatusCodes.Status500InternalServerError, StatusDescription = "Internal Server Error" };
             }
         }
-        public async Task DeletePhysicanByID(int physicianId)
+        public async Task<BaseResponse> DeletePhysicanByID(int physicianId)
         {
             try
             {
@@ -98,11 +110,17 @@ namespace HealthcareMember360.Core
                     _dBContext.Physican.Remove(physican);
                     await _dBContext.SaveChangesAsync();
                 }
+                return new BaseResponse()
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    StatusDescription = " Physician Details Deleted Successfully! ",
+                    ID = physicianId
+                };
             }
             catch (Exception ex)
             {
                 Log.Error("Exception occurred on Delete Physican By ID", ex);
-                throw ex;
+                return new BaseResponse { StatusCode = StatusCodes.Status500InternalServerError, StatusDescription = "Internal Server Error" };
             }
         }
     }

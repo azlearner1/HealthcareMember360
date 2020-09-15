@@ -7,9 +7,9 @@ namespace HealthcareMember360.Core
     {
         Task<List<ClaimDetails>> GetClaims();
         Task<ClaimDetails> GetClaimsByID(int claimID);
-        Task<int> SaveClaims(ClaimsRequest claimsRequest);
-        Task<int> UpdateClaims(ClaimDetails claimDetail);
-        Task DeleteClaimsByID(int claimID);
+        Task<BaseResponse> SaveClaims(ClaimsRequest claimsRequest);
+        Task<BaseResponse> UpdateClaims(ClaimDetails claimDetail);
+        Task<BaseResponse> DeleteClaimsByID(int claimID);
         Task<List<ClaimDetails>> GetClaimsDetailsByMemberID(int memberID);
     }
 }

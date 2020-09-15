@@ -1,7 +1,6 @@
 ﻿using HealthcareMember360.Core;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace HealthcareMember360.GetClaims.Test
