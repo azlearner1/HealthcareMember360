@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2020-09-21T10:07:26.1103922Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "AzureMCP"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "87f1b105-33e7-4820-8220-237f76ee12e0"
+    }
+  }
+}

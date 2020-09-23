@@ -1,5 +1,4 @@
-﻿using HealthcareMember360.Core;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace HealthcareMember360.MemberDetails.API.Controllers

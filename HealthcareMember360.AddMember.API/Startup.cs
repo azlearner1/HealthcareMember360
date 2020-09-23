@@ -1,12 +1,15 @@
 using HealthcareMember360.Core;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Azure.ServiceBus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
+using Serilog;
 
 namespace HealthcareMember360.AddMember.API
 {
@@ -51,13 +54,14 @@ namespace HealthcareMember360.AddMember.API
 
             services.AddScoped(typeof(IMemberRepository), typeof(MemberRepository));
             services.AddScoped<IMemberService, MemberService>();
+            services.AddSingleton<ITopicClient>(IServiceProvider => new TopicClient(Configuration.GetValue<string>("ServiceBus:ConnectionString"), Configuration.GetValue<string>("ServiceBus:TopicName")));
             services.Add(new ServiceDescriptor(typeof(IConfiguration),
                  provider => Configuration,
                  ServiceLifetime.Singleton));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -81,6 +85,8 @@ namespace HealthcareMember360.AddMember.API
             {
                 endpoints.MapControllers();
             });
+
+            loggerFactory.AddSerilog();
         }
     }
 }

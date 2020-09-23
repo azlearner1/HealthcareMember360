@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.AddMemb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.GetClaims.Test", "HealthcareMember360.GetClaims.Test\HealthcareMember360.GetClaims.Test.csproj", "{65DADC57-95AE-4C74-8E5E-9882B5B24319}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareMember360.Gatway.API", "HealthcareMember360.Gatway.API\HealthcareMember360.Gatway.API.csproj", "{DB06E24C-6933-460D-BF46-9BBFD90ED2D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareMember360.Gatway.API", "HealthcareMember360.Gatway.API\HealthcareMember360.Gatway.API.csproj", "{DB06E24C-6933-460D-BF46-9BBFD90ED2D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.ServiceBus;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,17 +15,19 @@ namespace HealthcareMember360.AddMember.API.Controllers
     [ApiController]
     public class AddMemberController : ControllerBase
     {
+        private readonly ILogger<AddMemberController> logger;
         private readonly IMemberService _memberService;
         private readonly IConfiguration _configuration;
         static ITopicClient topicClient;
 
-        public AddMemberController(IMemberService memberService, IConfiguration configuration)
+        public AddMemberController(ILogger<AddMemberController> logger, IMemberService memberService, IConfiguration configuration)
         {
+            this.logger = logger;
             _memberService = memberService;
             _configuration = configuration;
         }
         [HttpPost]
-        public async Task<ActionResult<BaseResponse>> AddMember(MemberRequest memberRequest)
+        public async Task<ActionResult> AddMember(MemberRequest memberRequest)
         {
             try
             {
@@ -43,13 +47,14 @@ namespace HealthcareMember360.AddMember.API.Controllers
 
                 await topicClient.CloseAsync();
 
-                var result = await _memberService.SaveMember(memberRequest);
+                return Created(HttpContext.Request.Scheme + HttpContext.Request.Host.ToUriComponent(), "Success");
+                //var result = await _memberService.SaveMember(memberRequest);
 
-                return CreatedAtAction(nameof(AddMember), new { id = result.ID }, result);
+                //return CreatedAtAction(nameof(AddMember), new { id = result.ID }, result);
             }
-            catch (System.Exception)
+            catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error creating new employee record");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error creating new Member record");
             }
         }
     }
