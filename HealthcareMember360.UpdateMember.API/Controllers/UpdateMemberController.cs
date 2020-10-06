@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.ServiceBus;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,14 +13,12 @@ namespace HealthcareMember360.UpdateMember.API.Controllers
     [ApiController]
     public class UpdateMemberController : ControllerBase
     {
-        private readonly ILogger<UpdateMemberController> logger;
         private readonly IMemberService _memberService;
         private readonly IConfiguration _configuration;
         static ITopicClient topicClient;
 
-        public UpdateMemberController(ILogger<UpdateMemberController> logger, IMemberService memberService, IConfiguration configuration)
+        public UpdateMemberController(IMemberService memberService, IConfiguration configuration)
         {
-            logger = logger;
             _memberService = memberService;
             _configuration = configuration;
         }

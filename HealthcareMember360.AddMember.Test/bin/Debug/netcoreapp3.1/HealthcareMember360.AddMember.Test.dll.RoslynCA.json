@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "3.6.0.0",
+        "fileVersion": "3.6.0-4.20269.4 (c94e3215)",
+        "semanticVersion": "3.6.0",
+        "language": "en-GB"
+      },
+      "results": [
+        {
+          "ruleId": "CS0535",
+          "level": "error",
+          "message": "'AddMemberService' does not implement interface member 'IMemberService.SaveMember(MemberRequest)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.AddMember.Test/Implementation/AddMemberService.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 37,
+                  "endLine": 8,
+                  "endColumn": 51
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rules": {
+        "CS0535": {
+          "id": "CS0535",
+          "defaultLevel": "error",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "NotConfigurable"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

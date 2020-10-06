@@ -1,0 +1,712 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "3.6.0.0",
+        "fileVersion": "3.6.0-4.20269.4 (c94e3215)",
+        "semanticVersion": "3.6.0",
+        "language": "en-GB"
+      },
+      "results": [
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Implementation/Repository/MemberRepository.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 17,
+                  "endLine": 24,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Startup.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 21,
+                  "endLine": 47,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Database/HM360DBContext.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Database/HM360DBContext.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Database/HM360DBContext.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Database/HM360DBContext.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Entities/Member.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Entities/Member.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Entities/Member.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Entities/Member.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Entities/Physican.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Entities/Physican.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Entities/Physican.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Entities/Physican.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Implementation/Repository/MemberRepository.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Implementation/Services/MemberService.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Implementation/Services/MemberService.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Implementation/Services/MemberService.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Interface/Repository/IMemberRepository.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Interface/Repository/IMemberRepository.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Interface/Repository/IMemberRepository.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Interface/Services/IMemberService.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Interface/Services/IMemberService.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Interface/Services/IMemberService.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Startup.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Program.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3445",
+          "level": "warning",
+          "message": "Consider using 'throw;' to preserve the stack trace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Implementation/Repository/MemberRepository.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 17,
+                  "endLine": 25,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4507",
+          "level": "warning",
+          "message": "Make sure this debug feature is deactivated before delivering the code in production.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Startup.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 17,
+                  "endLine": 64,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3445",
+          "level": "warning",
+          "message": "Consider using 'throw;' to preserve the stack trace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Workspace/MC/GitSource/HealthcareMember360/HealthcareMember360.MemberDetails.API/Startup.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 21,
+                  "endLine": 46,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Utility classes, which are collections of static members, are not meant to be instantiated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1128": {
+          "id": "S1128",
+          "shortDescription": "Unused \"using\" should be removed",
+          "fullDescription": "Although unnecessary using won't change anything to the produced application, removing them:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1128",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3445": {
+          "id": "S3445",
+          "shortDescription": "Exceptions should not be explicitly rethrown",
+          "fullDescription": "When rethrowing an exception, you should do it by simply calling throw; and not throw exc;, because the stack trace is reset with the second syntax, making debugging a lot harder.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3445",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S4507": {
+          "id": "S4507",
+          "shortDescription": "Delivering code in production with debug features activated is security-sensitive",
+          "fullDescription": "Delivering code in production with debug features activated is security-sensitive. It has led in the past to the following vulnerabilities:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4507",
+          "properties": {
+            "category": "Minor Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "NotConfigurable"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

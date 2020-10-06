@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using System;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Azure.ServiceBus;
 using Newtonsoft.Json;
@@ -15,14 +14,12 @@ namespace HealthcareMember360.SubmitClaim.API.Controllers
     [ApiController]
     public class SubmitClaimController : ControllerBase
     {
-        private readonly ILogger<SubmitClaimController> logger;
         private readonly IClaimsService _claimsService;
         private readonly IConfiguration _configuration;
         static ITopicClient topicClient;
 
-        public SubmitClaimController(ILogger<SubmitClaimController> logger, IClaimsService claimsService, IConfiguration configuration)
+        public SubmitClaimController(IClaimsService claimsService, IConfiguration configuration)
         {
-            logger = logger;
             _claimsService = claimsService;
             _configuration = configuration;
         }
